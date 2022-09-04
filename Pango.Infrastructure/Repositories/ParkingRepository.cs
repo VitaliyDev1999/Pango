@@ -16,6 +16,9 @@ public class ParkingRepository : IParkingRepository
     public async Task<IEnumerable<ParkingRecord>> GetAllParkingRecordsAsync()
     {
         return await _dbContext.ParkingRecord
+            .Include(x => x.ParkingZone)
+            .Include(x => x.City)
+            .Include(x => x.Customer)
             .ToArrayAsync();
     }
 

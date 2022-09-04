@@ -26,5 +26,11 @@ public class ParkingRecord
     [Required]
     public Guid CityId { get; set; }
 
+    [ForeignKey("CityId")]
+    public City City { get; set; }
+
+    [ForeignKey("CustomerId")]
+    public Customer Customer { get; set; }
+
     public ICollection<ParkingZone> ParkingZone { get; set; }
 }

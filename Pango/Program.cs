@@ -4,6 +4,7 @@ using Pango.Application.Common.Mapping;
 using Pango.Domain.Interfaces;
 using Pango.Infrastructure;
 using Pango.Infrastructure.Repositories;
+using Pango.Presentation.Models.Mappers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +27,8 @@ builder.Services.AddScoped<DbContext, PangoContext>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<IParkingRepository, ParkingRepository>();
 builder.Services.AddScoped<IParkingZoneRepository, ParkingZoneRepository>();
+
+builder.Services.AddScoped<IApiMapper, ApiMapper>();
 
 var app = builder.Build();
 
