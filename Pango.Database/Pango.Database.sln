@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Pango.Database", "Pango.Database\Pango.Database.sqlproj", "{4AED4B48-707D-4F6D-B361-DA943D9C5CCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AED4B48-707D-4F6D-B361-DA943D9C5CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AED4B48-707D-4F6D-B361-DA943D9C5CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AED4B48-707D-4F6D-B361-DA943D9C5CCD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4AED4B48-707D-4F6D-B361-DA943D9C5CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AED4B48-707D-4F6D-B361-DA943D9C5CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AED4B48-707D-4F6D-B361-DA943D9C5CCD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF29AF95-91E9-48E5-B0BD-F6EE1F7AD2F7}
+	EndGlobalSection
+EndGlobal
