@@ -27,6 +27,7 @@ builder.Services.AddScoped<DbContext, PangoContext>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<IParkingRepository, ParkingRepository>();
 builder.Services.AddScoped<IParkingZoneRepository, ParkingZoneRepository>();
+builder.Services.AddScoped<ICityRepository, CityRepository>();
 
 builder.Services.AddScoped<IApiMapper, ApiMapper>();
 

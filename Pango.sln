@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pango.API", "Pango\Pango.API.csproj", "{E864880E-E8DA-494E-BF05-1C183031A385}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pango.API", "Pango\Pango.API.csproj", "{E864880E-E8DA-494E-BF05-1C183031A385}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pango.Application", "Pango.Application\Pango.Application.csproj", "{72EF9D11-6B53-418F-BD3F-6627B36EAC24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pango.Application", "Pango.Application\Pango.Application.csproj", "{72EF9D11-6B53-418F-BD3F-6627B36EAC24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pango.Domain", "Pango.Domain\Pango.Domain.csproj", "{EE95A47A-97FC-4F2F-BCC5-771ED79ACB10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pango.Domain", "Pango.Domain\Pango.Domain.csproj", "{EE95A47A-97FC-4F2F-BCC5-771ED79ACB10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pango.Infrastructure", "Pango.Infrastructure\Pango.Infrastructure.csproj", "{63685023-FEC6-49E2-93F4-3ADA28DC2D1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pango.Infrastructure", "Pango.Infrastructure\Pango.Infrastructure.csproj", "{63685023-FEC6-49E2-93F4-3ADA28DC2D1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pango.Test.Unit", "Pango.Test.Unit\Pango.Test.Unit.csproj", "{C64EBB61-17E4-48A8-88B5-72F702DB0C34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pango.Test.Unit", "Pango.Test.Unit\Pango.Test.Unit.csproj", "{C64EBB61-17E4-48A8-88B5-72F702DB0C34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pango.Test.Integration", "Pango.Test.Integration\Pango.Test.Integration.csproj", "{81DA70C1-9739-4CAB-87F4-C51EEE144697}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pango.Test.Integration", "Pango.Test.Integration\Pango.Test.Integration.csproj", "{81DA70C1-9739-4CAB-87F4-C51EEE144697}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{046DA3E8-0672-474C-AAAB-8F0ACAB9057C}"
 EndProject
@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{B4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{29406472-9E86-4B07-B6F1-6FA07ADB93D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pango.Presentation", "Pango.Presentation\Pango.Presentation.csproj", "{1AC621E6-1D41-4570-BB1D-4B4558236244}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pango.Presentation", "Pango.Presentation\Pango.Presentation.csproj", "{1AC621E6-1D41-4570-BB1D-4B4558236244}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

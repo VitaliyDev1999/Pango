@@ -37,13 +37,19 @@ public class ParkingRepository : IParkingRepository
     {
         _dbContext.ParkingRecord.Add(parking);
         await _dbContext.SaveChangesAsync();
-        return parking;
+        return await _dbContext.ParkingRecord
+            .Include(x => x.ParkingZone)
+            .Include(x => x.City)
+            .Include(x => x.Customer).FirstAsync(x => x.Id == parking.Id);
     }
 
     public async Task<ParkingRecord> UpdateAsync(ParkingRecord parking)
     {
         _dbContext.ParkingRecord.Update(parking);
         await _dbContext.SaveChangesAsync();
-        return parking;
+        return await _dbContext.ParkingRecord
+            .Include(x => x.ParkingZone)
+            .Include(x => x.City)
+            .Include(x => x.Customer).FirstAsync(x => x.Id == parking.Id);
     }
 }

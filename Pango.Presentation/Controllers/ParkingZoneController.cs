@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Pango.Application.ParkingZone.Queries;
 using Pango.Presentation.Models.Mappers;
 
 namespace Pango.Presentation.Controllers;
