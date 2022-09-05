@@ -1,0 +1,74 @@
+<div class="form-group row">
+    <label class="col-sm-2">Customer</label>
+    <div class="col-sm-10">
+        <select id="select-menu" [(ngModel)]="CustomerId" class="bx--text-input" required name="actionSelection" >
+            <option  *ngFor="let action of customers"  [value]="action.id">{{action.firstName + " " + action.lastName}}</option>
+        </select>
+    </div>
+</div>
+
+<div class="form-group row">
+    <label class="col-sm-2">City</label>
+    <div class="col-sm-10">
+        <select id="select-menu" [(ngModel)]="CityId" class="bx--text-input" required name="actionSelection" >
+            <option  *ngFor="let action of cities"  [value]="action.id">{{action.name}}</option>
+        </select>
+    </div>
+</div>
+
+<div class="form-group row">
+    <label class="col-sm-2">Phone Number</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="PhoneNumber"
+        placeholder="Enter Phone Number">
+    </div>
+</div>
+
+<div class="form-group row">
+    <label class="col-sm-2">CarNumber</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="CarNumber"
+        placeholder="Enter CarNumber">
+    </div>
+</div>
+
+<div class="form-group row">
+    <label class="col-sm-2">ParkingTime</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="ParkingTime"
+        placeholder="Enter ParkingTime">
+    </div>
+</div>
+
+<div class="form-group row">
+    <label class="col-sm-2">Lat</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Lat"
+        placeholder="Enter Lat">
+    </div>
+</div>
+
+<div class="form-group row">
+    <label class="col-sm-2">Long</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Long"
+        placeholder="Enter Long">
+    </div>
+</div>
+
+<div class="form-group row">
+    <label class="col-sm-2">ParkingZones</label>
+    <div class="col-sm-10">
+        <select multiple id="select-menu" [(ngModel)]="ParkingZonesIds" class="bx--text-input" required name="actionSelection" >
+            <option  *ngFor="let action of parkingZones"  [value]="action.id">{{action.name}}</option>
+        </select>
+    </div>
+</div>
+
+<button (click)="addParking()" *ngIf="!parking.id" class="btn btn-primary">
+    Add
+</button>
+
+<button (click)="updateParking()" *ngIf="parking.id" class="btn btn-primary">
+    Update
+</button>

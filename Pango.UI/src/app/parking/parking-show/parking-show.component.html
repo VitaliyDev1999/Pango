@@ -1,0 +1,60 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+(click)="AddParking()" data-keyborad="false">
+  Add Parking
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">{{modalTitle}}</h5>
+        <button type="button" class="btn-close" (click)="closeClick()" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <app-parking-add-edit [parking]="parking" [cities]="citiesList" [customers]="customersList" [parkingZones]="parkingZonesList" *ngIf="activateAddEditCusCom">
+        </app-parking-add-edit>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+          <th>Id</th>
+          <th>Customer</th>
+          <th>ParkingTime</th>
+          <th>CarNumber</th>
+          <th>PhoneNumber</th>
+          <th>Lat</th>
+          <th>Long</th>
+          <th>City</th>
+          <th>PhonePlatform</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dataItem of parkingList">
+        <td>{{dataItem.id}}</td>
+        <td>{{dataItem.customer.firstName + " " + dataItem.customer.lastName}}</td>
+        <td>{{dataItem.parkingTime}}</td>
+        <td>{{dataItem.carNumber}}</td>
+        <td>{{dataItem.phoneNumber}}</td>
+        <td>{{dataItem.lat}}</td>
+        <td>{{dataItem.long}}</td>
+        <td>{{dataItem.city.name}}</td>
+        <td *ngIf="dataItem.phonePlatform == 1">{{"IOS"}}</td>
+        <td *ngIf="dataItem.phonePlatform == 2">{{"Android"}}</td>
+        <td>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          (click)="EditParking(dataItem)">Edit</button>
+            <button type="button" class="btn btn-primary" (click)="deleteClick(dataItem)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
