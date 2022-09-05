@@ -55,14 +55,14 @@ namespace Pango.Test.Unit
         }
 
         [TestMethod]
-        public void GetCutomersSuccessfully_ReturnListOfCustomers()
+        public void GetCutomersSuccessfully_ReturnsListOfCustomers()
         {
             var customersCount = 3;
 
             var result = _customerRepository.GetAllCustomersAsync().GetAwaiter().GetResult().ToList();
 
             Assert.IsNotNull(result);
-            Assert.AreEqual(3, result.Count);
+            Assert.AreEqual(customersCount, result.Count);
         }
     }
 }
