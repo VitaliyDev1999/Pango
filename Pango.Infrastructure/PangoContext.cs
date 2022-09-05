@@ -4,7 +4,7 @@ using Pango.Domain.Interfaces;
 
 namespace Pango.Infrastructure;
 
-public sealed class PangoContext : DbContext, IUnitOfWork
+public class PangoContext : DbContext, IUnitOfWork
 {
     public DbSet<Customer> Customer { get; set; }
     public DbSet<ParkingRecord> ParkingRecord { get; set; }
